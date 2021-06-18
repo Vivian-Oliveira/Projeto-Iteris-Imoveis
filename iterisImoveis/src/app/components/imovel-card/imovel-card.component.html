@@ -1,0 +1,12 @@
+<mat-card>
+  <img [src]="imovel?.image">
+​
+  <div class="info">
+    <span>{{imovel?.address}}</span>
+    <span class="price">{{imovel?.price | currency:'BRL':'symbol':"4.0-2"}}</span>
+  </div>
+  <div class="info">
+    <span>{{imovel?.owner}}</span>
+    <span>{{imovel?.type}}</span>
+  </div>
+</mat-card>
